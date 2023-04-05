@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parralax Effect Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+
+    <a href="#" class="logo">Logo</a>
+    <ul class="navigation">
+        <li> <a href="#" class="active">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Event</a></li>
+        <li> <a href="#">Contact</a></li>
+    </ul>
+</header>
+<section class="parallax">
+<h2 id="text">Parallax Website</h2>
+<img src="images/monutain_01.png" id="m1" alt="">
+<img src="images/trees_02.png" id="t2" alt="">
+<img src="images/monutain_02.png" id="m2" alt="">
+<img src="images/trees_01.png" id="t1" alt="">
+<img src="images/man.png" id="man" alt="">
+<img src="images/plants.png" id="plants" alt="">
+</section>
+
+<section class="sec">
+
+<h2>Paralax Scrolling Website</h2>
+<p>Parallax scrolling websites have gained significant popularity in recent years due to their engaging and immersive user experience.
+    This web design technique involves the foreground and background elements moving at different speeds as the user scrolls down the
+    page, creating a visually dynamic and interactive effect. In this article, we will delve into the details of parallax scrolling 
+    websites, including how they work, their benefits, and some examples of successful implementations.
+    <br><br>
+    At its core, parallax scrolling is a design technique that creates an illusion of depth by utilizing multiple layers of images or
+    elements that move independently of each other. As the user scrolls down the page, these layers move at different speeds, creating
+    a sense of depth and dimensionality. This technique is achieved using HTML, CSS, and JavaScript, and can be applied to various
+    types of websites, including business websites, portfolios, storytelling websites, and more.
+    <br><br>
+    One of the main benefits of parallax scrolling websites is their ability to create a captivating and memorable user experience.
+    By adding depth and motion to the design, parallax scrolling can make a website more visually appealing and interactive.
+    It can also help to tell a story or convey a message in a more engaging way, as users scroll through the different layers of content.
+    This can result in increased user engagement, longer time spent on the website, and higher conversion rates.
+    <br><br>
+    Another advantage of parallax scrolling websites is their potential to create a seamless and smooth scrolling experience.
+    When implemented correctly, parallax scrolling can provide a smooth transition between the different layers of content, 
+    creating a sense of continuity and flow. This can enhance the overall user experience, making the website more enjoyable 
+    and easy to navigate.
+    <br><br>
+    Furthermore, parallax scrolling websites can also be optimized for mobile devices, making them accessible to users on various platforms.
+    Responsive web design techniques can be used to ensure that the parallax scrolling effect works well on different screen sizes,
+    including smartphones and tablets. This allows for a consistent and engaging user experience across multiple devices, increasing 
+    the reach and accessibility of the website.
+    <br><br> 
+    There are different types of parallax scrolling effects that can be used in web design. One common type is the "classic" or "vertical"
+    parallax scrolling, where the layers move vertically in relation to each other as the user scrolls down the page. This creates a sense
+    of depth and motion, with the background elements appearing to move slower than the foreground elements. Another type is the "horizontal"
+    parallax scrolling, where the layers move horizontally, creating a side-scrolling effect. This can be used to create a unique and
+    interactive navigation experience.
+    <br><br>
+    In addition to the different types of parallax scrolling effects, there are also various ways to implement parallax scrolling on a website.
+    One approach is to use CSS and JavaScript to manually control the movement of the layers. This gives the designer full control over
+    the speed and direction of the parallax effect, allowing for a highly customized design. Another approach is to use pre-built libraries
+    or plugins that provide ready-made parallax scrolling effects, making it easier to implement on a website without extensive coding 
+    knowledge.
+    <br><br>
+    Several successful examples of parallax scrolling websites can be found across the internet. One notable example is the "Nike Better World"
+    website, which uses parallax scrolling to create an immersive and interactive experience as users scroll through different scenes and
+    stories. The website features smooth transitions between layers, engaging animations, and a compelling narrative, making it a memorable
+    and impactful user experience.
+    <br><br>
+    In conclusion, parallax scrolling websites are a popular web design technique that can create engaging and immersive user experiences.
+    They utilize multiple layers of images or elements that move independently of each other, creating a sense of depth and motion
+    as the user scrolls down the page. Parallax scrolling can enhance the visual appeal, interactivity, and storytelling capabilities
+    of a website, resulting in increased user engagement and conversion rates.</p>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.from("#m1", {
+    scrollTrigger : {
+        scrub:true
+    },
+    y: 100,
+})
+gsap.from("#m2", {
+    scrollTrigger : {
+        scrub:true
+    },
+    y: 50,
+})
+
+gsap.from("#t2", {
+    scrollTrigger : {
+        scrub:true
+    },
+    x:-50,
+})
+
+gsap.from("#t1", {
+    scrollTrigger : {
+        scrub:true
+    },
+    x: 50,
+})
+gsap.from("#man", {
+    scrollTrigger : {
+        scrub:true
+    },
+    x:-250,
+})
+gsap.from("#plants", {
+    scrollTrigger : {
+        scrub:true
+    },
+    x:-50,
+})
+
+gsap.from("#text", {
+    scrollTrigger : {
+        scrub:true
+    },
+    x: 600,
+})
+
+</script>
+
+<body>
+
+</body>
+</html>
